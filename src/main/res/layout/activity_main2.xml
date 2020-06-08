@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ec7063"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    tools:context=".Main2Activity">
+
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/ic_arrow_forward_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/servoon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toBottomOf="@+id/backward" />
+
+    <Button
+        android:id="@+id/conon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/ic_radio_button_checked_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/dis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/servooff"
+        app:layout_constraintTop_toBottomOf="@+id/servoon" />
+
+    <Button
+        android:id="@+id/dis"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/ic_bluetooth_disabled_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/conoff"
+        app:layout_constraintTop_toBottomOf="@+id/conon" />
+
+    <Button
+        android:id="@+id/servoon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/ic_redo_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/conon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stop"
+        app:layout_constraintTop_toBottomOf="@+id/right" />
+
+
+    <Button
+        android:id="@+id/backward"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/ic_arrow_downward_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/forward"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/ic_stop_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/servooff"
+        app:layout_constraintEnd_toStartOf="@+id/servoon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/left" />
+
+    <Button
+        android:id="@+id/servooff"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/ic_undo_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/conoff"
+        app:layout_constraintEnd_toStartOf="@+id/conon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop" />
+
+    <Button
+        android:id="@+id/conoff"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ic_radio_button_unchecked_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/servooff" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/stop"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forward" />
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/ic_arrow_upward_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/left"
+        app:layout_constraintEnd_toStartOf="@+id/backward"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
